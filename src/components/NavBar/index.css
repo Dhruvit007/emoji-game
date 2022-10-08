@@ -1,0 +1,22 @@
+.navbar-container {
+  height: 10vh;
+  background-image: linear-gradient(to right, #9796f0, #ffffff33);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.emoji-logo-container {
+  display: flex;
+  margin-left: 10%;
+}
+.navbar-score-container {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10%;
+  width: 14%;
+  min-width: 150px;
+}
+.hide-score {
+  display: none;
+}
