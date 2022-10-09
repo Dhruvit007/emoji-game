@@ -2,7 +2,12 @@ import './index.css'
 
 const NavBar = props => {
   const {score, isGameOn, highScore} = props
-  const scoreClass = !isGameOn ? 'hide-score' : ''
+  const onNavbarDisplay = () => (
+    <div className="navbar-score-container">
+      <p className="score">Score: {score}</p>
+      <p className="high-score">Top Score: {highScore}</p>
+    </div>
+  )
   return (
     <div className="navbar-container">
       <div className="emoji-logo-container">
@@ -10,12 +15,9 @@ const NavBar = props => {
           src="https://assets.ccbp.in/frontend/react-js/game-logo-img.png"
           alt="emoji logo"
         />
-        <h1>Emoji Game</h1>
+        <h1 className="game-name">Emoji Game</h1>
       </div>
-      <div className={`navbar-score-container ${scoreClass}`}>
-        <p>Score: {score}</p>
-        <p>Top Score: {highScore}</p>
-      </div>
+      {isGameOn ? onNavbarDisplay() : ''}
     </div>
   )
 }

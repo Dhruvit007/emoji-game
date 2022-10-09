@@ -11,7 +11,6 @@ const WinOrLoseCard = props => {
       : 'https://assets.ccbp.in/frontend/react-js/lose-game-img.png'
   const status = score === 12 ? 'Won' : 'Lose'
   const paragraph = score === 12 ? 'Best Score' : 'Score'
-  const alt = score === 12 ? 'win' : 'lose'
 
   return (
     <div className="result-container">
@@ -23,7 +22,7 @@ const WinOrLoseCard = props => {
           Play Again
         </button>
       </div>
-      <img className="result-image" src={imgUrl} alt={alt} />
+      <img className="result-image" src={imgUrl} alt="win or lose" />
     </div>
   )
 }

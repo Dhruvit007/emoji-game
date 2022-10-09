@@ -1,15 +1,35 @@
 .emoji-card {
   background-color: #ffffff33;
   border-radius: 17px;
-  width: 24%;
+  width: 200px;
   height: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  margin-right: 20px;
+}
+@media screen and (max-width: 767px) {
+  .emoji-card {
+    width: 150px;
+    height: 130px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .emoji-card {
+    width: 100px;
+    height: 100px;
+  }
 }
 .emoji-btn {
   background-color: transparent;
   border: none;
   outline: none;
+}
+@media screen and (max-width: 500px) {
+  .emoji-image {
+    width: 50px;
+  }
 }
